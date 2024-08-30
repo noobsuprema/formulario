@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Elaborado</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Formulário de Inscrição</h1>
+    <form id="formulario">
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="data-nascimento">Data de Nascimento:</label>
+            <input type="date" id="data-nascimento" name="data-nascimento" required>
+
+            <label for="sexo">Sexo:</label>
+            <input type="radio" id="masculino" name="sexo" value="masculino">
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="feminino" name="sexo" value="feminino">
+            <label for="feminino">Feminino</label>
+            <input type="radio" id="outro" name="sexo" value="outro">
+            <label for="outro">Outro</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Endereço</legend>
+            <label for="rua">Rua:</label>
+            <input type="text" id="rua" name="rua" required>
+
+            <label for="numero">Número:</label>
+            <input type="number" id="numero" name="numero" required>
+
+            <label for="complemento">Complemento:</label>
+            <input type="text" id="complemento" name="complemento">
+
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" name="bairro" required>
+
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" required>
+
+            <label for="estado">Estado:</label>
+            <select id="estado" name="estado" required>
+                <option value="">Selecione um estado</option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="ES">Espírito Santo</option>
+            </select>
+
+            <label for="cep">CEP:</label>
+            <input type="number" id="cep" name="cep" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferências</legend>
+            <label for="interesses">Quais são seus interesses?</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="esportes" name="interesses" value="esportes">
+                <label for="esportes">Esportes</label>
+                <input type="checkbox" id="musica" name="interesses" value="musica">
+                <label for="musica">Música</label>
+                <input type="checkbox" id="tecnologia" name="interesses" value="tecnologia">
+                <label for="tecnologia">Tecnologia</label>
+                <input type="checkbox" id="viagens" name="interesses" value="viagens">
+                <label for="viagens">Viagens</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Mensagem</legend>
+            <label for="mensagem">Sua Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+        </fieldset>
+
+        <div class="error-message" id="error-message">Por favor, preencha todos os campos obrigatórios.</div>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
